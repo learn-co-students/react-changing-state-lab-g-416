@@ -5,7 +5,7 @@ class Board extends React.Component {
   render () {
     const { board, onClick } = this.props;
     return (
-      <div className='board'>
+      <div className='.board'>
         {
           board.map((player, i) =>
           <Field key={i} player={player} onclick={onClick.bind(null, i)} />
