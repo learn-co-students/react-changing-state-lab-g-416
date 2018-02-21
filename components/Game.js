@@ -4,11 +4,11 @@ const Status = require('./Status');
 const solutions = require('./solutions');
 
 const INITIAL_STATE = {
-  board: {
+  board: [
     null, null, null,
     null, null, null,
     null, null, null
-  },
+  ],
   turn: 'X'
 }
 
@@ -53,7 +53,7 @@ class Game extends React.Component {
       <div className='game'>
         <Board board={this.state.board} onClick={this.handleClick} />
         { this.isComplete() ? <Status winner={this.getWinner()} /> : null }
-        <button className='game_reset' onClick={this.handleReset}>Reset</button>
+        <button className='game__reset' onClick={this.handleReset}>Reset</button>
       </div>
     );
   }

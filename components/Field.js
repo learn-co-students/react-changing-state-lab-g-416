@@ -6,7 +6,7 @@ class Field extends React.Component {
     return (
       <button
         className='field'
-        disable={!!player}
+        disabled={!!player}
         onClick={onClick}
       >
         {player}
