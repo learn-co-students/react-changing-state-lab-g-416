@@ -7,7 +7,7 @@ const Field = require('../components/Field');
 describe('<Board />', function () {
   it('should have .board class', function () {
     const wrapper = shallow(<Board board={[]} onClick={Function.prototype} />);
-    expect(wrapper.hasClass('board')).toBe(true);
+    expect(wrapper.hasClass('.board')).toBe(true);
   });
 
   it('should render nine <Field /> components', function () {
